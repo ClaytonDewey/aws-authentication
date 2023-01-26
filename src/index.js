@@ -5,7 +5,7 @@ import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.min.css';
 
-import Amplify from 'aws-amplify';
+import { Amplify } from 'aws-amplify';
 import config from './aws-exports';
 Amplify.configure(config);
 
