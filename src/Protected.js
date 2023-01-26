@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Auth } from 'aws-amplify';
 import Container from './Container';
+import protectedRoute from './protectedRoute';
 
 const Protected = (props) => {
   useEffect(() => {
@@ -15,4 +16,4 @@ const Protected = (props) => {
   );
 };
 
-export default Protected;
+export default protectedRoute(Protected);
