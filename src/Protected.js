@@ -7,7 +7,7 @@ const Protected = (props) => {
     Auth.currentAuthenticatedUser().catch(() => {
       props.history.push('/profile');
     });
-  }, []);
+  }, [props.history]);
   return (
     <Container>
       <h1>Protected route</h1>
